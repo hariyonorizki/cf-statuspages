@@ -92,12 +92,10 @@ export default function Page() {
         />
       </main>
       <footer className='my-4 flex justify-between'>
-        <span>
           <div className="flex items-center justify-center mt-4 text-sm">
             © 2024 Kiki Creative Media - All rights reserved.
         </div>
         <div className="flex items-center justify-center mt-0 mb-0 text-sm">Powered with&nbsp;<a href="https://github.com/eidam/cf-workers-status-page">eidam/cf-workers-status-page</a>.</div>
-        </span>
       </footer>
     </div>
   )
