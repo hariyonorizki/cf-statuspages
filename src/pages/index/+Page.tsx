@@ -92,7 +92,7 @@ export default function Page() {
         />
       </main>
       <footer className="my-4 flex flex-col items-center text-center text-sm gap-1">
-  <hr className="w-full border-t border-gray-200 opacity-40 my-2" />
+  <hr className="w-full border-t-2 border-gray-300 my-3" />
 
   <div>
     © 2026 Kiki Creative Media - All rights reserved.
@@ -100,18 +100,18 @@ export default function Page() {
 
   <div>
     Powered with&nbsp;
-    <a href="https://github.com/eidam/cf-workers-status-page">
-      eidam/cf-workers-status-page
-    </a>.
-  </div>
-  
-  <div>
-    Modified by&nbsp;
     <a href="https://github.com/naodeng/cf-workers-status-page">
       naodeng/cf-workers-status-page
-    </a>.
+    </a>
+  </div>
+
+  <div>
+    Based on&nbsp;
+    <a href="https://github.com/eidam/cf-workers-status-page">
+      eidam/cf-workers-status-page
+    </a>
   </div>
 </footer>
-    </div>
+</div>
   )
 }
