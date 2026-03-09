@@ -1,0 +1,23 @@
+# 部署前：运行 npx wrangler kv namespace create cf-workers-status-page 获取 id；若已存在则用 npx wrangler kv namespace list 查看 id，替换下方两处 YOUR_KV_NAMESPACE_ID
+# 不写 account_id 时：CI 由 GitHub Secret CLOUDFLARE_ACCOUNT_ID 提供；本地由 wrangler login 或环境变量提供
+name = "nao-status-page"
+main = "./src/worker/index.ts"
+compatibility_flags = [ "streams_enable_constructors" ]
+compatibility_date = "2021-09-29"
+workers_dev = true
+kv_namespaces = [ { binding = "KV_STORE", id = "cc69efaefc1f48b9b116b04aae85ae14" } ]
+
+[site]
+bucket = "./dist/client"
+
+[dev]
+port = 3000
+
+[env.production]
+kv_namespaces = [ { binding = "KV_STORE", id = "cc69efaefc1f48b9b116b04aae85ae14" } ]
+
+[env.production.triggers]
+crons = [
+  # 每 5 分钟检查监控
+  "*/5 * * * *",
+]
