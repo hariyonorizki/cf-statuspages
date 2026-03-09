@@ -97,6 +97,7 @@ export default function Page() {
             © 2024 Kiki Creative Media - All rights reserved.
         </div>
         <div className="flex items-center justify-center mt-0 mb-0 text-sm">Powered with&nbsp;<a href="https://github.com/eidam/cf-workers-status-page">eidam/cf-workers-status-page</a>.</div>
+        </span>
       </footer>
     </div>
   )
