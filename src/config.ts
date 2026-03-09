@@ -3,7 +3,7 @@ import type { Config } from './types'
 export const config: Config = {
   settings: {
     title: 'Domain Availability Status',
-    logo: 'logo-192x192.png',
+    logo: 'https://cdn-hariyonorizki.eu.org/storageapis/public/favicon.ico',
     url: 'https://domain.hariyonorizki.eu.org',
     displayDays: 90,
     collectResponseTimes: true,

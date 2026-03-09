@@ -51,7 +51,7 @@ export default function Page() {
     <div className='container max-w-screen-xl pt-4'>
       <header className='flex items-center justify-between'>
         <div className='flex items-center gap-2'>
-          <img src={config.settings.logo ? `/${config.settings.logo}` : '/logo.svg'} alt='Kiki Creative Media Logo' className='size-10' />
+          <img src='https://cdn-hariyonorizki.eu.org/storageapis/public/favicon.ico' alt='Kiki Creative Media Logo' className='size-10' />
           <h1 className='text-3xl'>{config.settings.title}</h1>
         </div>
         <div>
@@ -91,12 +91,28 @@ export default function Page() {
           search={deferredSearch}
         />
       </main>
-      <footer className='my-4 flex justify-between'>
-          <div className="flex items-center justify-center mt-4 text-sm">
-            © 2024 Kiki Creative Media - All rights reserved.
-        </div>
-        <div className="flex items-center justify-center mt-0 mb-0 text-sm">Powered with&nbsp;<a href="https://github.com/eidam/cf-workers-status-page">eidam/cf-workers-status-page</a>.</div>
-      </footer>
+      <footer className="my-4 flex flex-col items-center text-center text-sm gap-1">
+  <div>
+    © 2024 Kiki Creative Media - All rights reserved.
+  </div>
+
+  <div>
+    Powered with&nbsp;
+    <a href="https://github.com/eidam/cf-workers-status-page">
+      eidam/cf-workers-status-page
+    </a>.
+  </div>
+  
+  <div>
+    Using Modified Ver. from&nbsp;
+    <a href="https://github.com/naodeng/cf-workers-status-page">
+      naodeng/cf-workers-status-page
+    </a>&
+    <a href="https://github.com/yunsii/cf-worker-status-page-pro">
+      yunsii/cf-workers-status-page-pro
+    </a>&
+  </div>
+</footer>
     </div>
   )
 }
