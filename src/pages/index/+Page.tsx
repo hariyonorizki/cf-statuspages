@@ -91,9 +91,10 @@ export default function Page() {
           search={deferredSearch}
         />
       </main>
-      <footer className="my-4 flex flex-col items-center text-center text-sm gap-1">
+      <footer className="my-4 flex flex-col items-center text-center text-sm gap-1"><br>
+   <hr className="w-full border-t border-gray-200 opacity-40 my-2" />
   <div>
-    © 2024 Kiki Creative Media - All rights reserved.
+    © 2026 Kiki Creative Media - All rights reserved.
   </div>
 
   <div>
@@ -104,13 +105,10 @@ export default function Page() {
   </div>
   
   <div>
-    Using Modified Ver. from&nbsp;
+    Modified by&nbsp;
     <a href="https://github.com/naodeng/cf-workers-status-page">
       naodeng/cf-workers-status-page
-    </a>&
-    <a href="https://github.com/yunsii/cf-worker-status-page-pro">
-      yunsii/cf-workers-status-page-pro
-    </a>&
+    </a>.
   </div>
 </footer>
     </div>

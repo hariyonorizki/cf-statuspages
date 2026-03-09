@@ -61,19 +61,21 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
         <div>
           {allOperational ? 'All Domain Operational' : 'Some Domains Experiencing Issues'}
         </div>
-        {!!data.lastUpdate && (
-          <div className='text-xs font-light' suppressHydrationWarning title={new Date(data.lastUpdate.time).toLocaleString()}>
-            checked
-            {' '}
-            {Math.round((Date.now() - data.lastUpdate.time) / 1000)}
-            {' '}
-            sec
-            ago (from
-            {' '}
-            {parseLocation(data.lastUpdate.location)}
-            )
-          </div>
-        )}
+        {!!data.lastUpdate && (() => {
+  const diff = Date.now() - data.lastUpdate.time
+  const sec = Math.round(diff / 1000)
+  const min = Math.round(diff / (1000 * 60))
+
+  return (
+    <div
+      className='text-xs font-light'
+      suppressHydrationWarning
+      title={new Date(data.lastUpdate.time).toLocaleString()}
+    >
+      checked {sec < 60 ? `${sec} sec` : `${min} min`} ago
+    </div>
+  )
+})()}
       </div>
       <ul className={cls`
         mt-4 flex flex-col gap-y-2
