@@ -45,7 +45,7 @@ export async function handleCronTrigger(env: Env, ctx: ExecutionContext) {
       method: monitor.method || 'GET',
       redirect: monitor.followRedirect ? 'follow' : 'manual',
       headers: {
-        'User-Agent': 'cf-worker-status-page-pro',
+        'User-Agent': 'KIKI STATUS PAGES PINGER - © 2026 | All rights reserved - Info: If your IP address/Hostnames is private, has privacy concerns, or a misconfiguration, and you do not wish to be scanned, send email to: scan-abuse@hariyonorizki.eu.org. - kikiserverstatus.eu.org',
       },
     })
     const requestTime = Math.round(Date.now() - requestStartTime)

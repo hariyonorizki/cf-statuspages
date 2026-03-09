@@ -59,7 +59,7 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
         }}
       >
         <div>
-          {allOperational ? 'All Systems Operational' : 'Not All Systems Operational'}
+          {allOperational ? 'All Domain Operational' : 'Some Domains Experiencing Issues'}
         </div>
         {!!data.lastUpdate && (
           <div className='text-xs font-light' suppressHydrationWarning title={new Date(data.lastUpdate.time).toLocaleString()}>
@@ -205,7 +205,7 @@ const MonitorPanel: React.FC<IMonitorPanelProps> = (props) => {
                     case 'all-good':
                       color = cls`bg-green-500`
                       textColor = cls`text-green-500`
-                      statusStr = 'All good'
+                      statusStr = 'Operational'
                       break
                     case 'all-incidents':
                       color = cls`bg-red-700`

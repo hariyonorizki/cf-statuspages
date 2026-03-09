@@ -51,7 +51,7 @@ export default function Page() {
     <div className='container max-w-screen-xl pt-4'>
       <header className='flex items-center justify-between'>
         <div className='flex items-center gap-2'>
-          <img src={config.settings.logo ? `/${config.settings.logo}` : '/logo.svg'} alt='' className='size-10' />
+          <img src={config.settings.logo ? `/${config.settings.logo}` : '/logo.svg'} alt='Kiki Creative Media Logo' className='size-10' />
           <h1 className='text-3xl'>{config.settings.title}</h1>
         </div>
         <div>
@@ -93,27 +93,10 @@ export default function Page() {
       </main>
       <footer className='my-4 flex justify-between'>
         <span>
-          Powered by
-          {' '}
-          <a href='https://workers.cloudflare.com/' target='_blank' rel='noreferrer'>
-            Cloudflare Workers
-          </a>
-          {' '}
-          &
-          {' '}
-          <a href='https://inaodeng.com' target='_blank' rel='noreferrer'>
-            inaodeng
-          </a>
-        </span>
-        <a
-          href='https://github.com/yunsii/cf-worker-status-page-pro'
-          target='_blank'
-          rel='noreferrer'
-          className='flex items-center gap-1'
-        >
-          <span className='i-ic--outline-star size-4 animate-bounce' />
-          Get your status page
-        </a>
+          <div className="flex items-center justify-center mt-4 text-sm">
+            © 2024 Kiki Creative Media - All rights reserved.
+        </div>
+        <div className="flex items-center justify-center mt-0 mb-0 text-sm">Powered with&nbsp;<a href="https://github.com/eidam/cf-workers-status-page">eidam/cf-workers-status-page</a>.</div>
       </footer>
     </div>
   )

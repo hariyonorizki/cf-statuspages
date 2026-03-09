@@ -27,8 +27,10 @@ export const onRenderHtml: OnRenderHtmlAsync = async (pageContext) => {
   return escapeInject`
     <!DOCTYPE html>
     <html>
-      <title>${config.settings.title}</title>
       <head>
+        <title>${config.settings.title} - Kiki Creative Media</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn-hariyonorizki.eu.org/storageapis/public/favicon.ico">
+        <script defer src="https://analytics.hariyonorizki.eu.org/script.js" data-website-id="6dca5910-b80d-49d9-88b1-7be16ea71544"></script>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
       </head>
       <body>
