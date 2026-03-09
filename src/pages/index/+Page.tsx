@@ -91,8 +91,9 @@ export default function Page() {
           search={deferredSearch}
         />
       </main>
-      <footer className="my-4 flex flex-col items-center text-center text-sm gap-1"></br>
-   <hr className="w-full border-t border-gray-200 opacity-40 my-2" />
+      <footer className="my-4 flex flex-col items-center text-center text-sm gap-1">
+  <hr className="w-full border-t border-gray-200 opacity-40 my-2" />
+
   <div>
     © 2026 Kiki Creative Media - All rights reserved.
   </div>
