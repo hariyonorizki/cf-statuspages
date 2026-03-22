@@ -5,8 +5,8 @@ export const config: Config = {
     title: 'Domain Availability Status',
     logo: 'https://cdn-hariyonorizki.eu.org/storageapis/public/favicon.ico',
     url: 'https://domain.hariyonorizki.eu.org',
-    displayDays: 90,
-    collectResponseTimes: true,
+    displayDays: 30,
+    collectResponseTimes: false,
   },
 
   monitors: [
@@ -78,7 +78,7 @@ export const config: Config = {
     { id: 'ws-08', name: 'iteducationkibotz.my.id', description: 'IT Education Kibotz workspace.', url: 'https://iteducationkibotz.my.id', method: 'GET', expectStatus: 200 },
 
     // ========================
-    // Gendhis Network
+    // Gendhis Photo Studio Network
     // ========================
 
     { id: 'gnd-01', name: 'gendhis.eu.cc', description: 'Main Gendhis website.', url: 'https://gendhis.eu.cc', method: 'GET', expectStatus: 200 },
@@ -86,24 +86,44 @@ export const config: Config = {
     { id: 'gnd-03', name: 'cdn-gendhisphotostudio.eu.cc', description: 'CDN for Gendhis Photo Studio.', url: 'https://cdn-gendhisphotostudio.eu.cc', method: 'GET', expectStatus: 200 },
 
     // ========================
-    // Kiki Network
+    // Kiki Additional Services Network
     // ========================
 
     { id: 'kiki-01', name: 'kikigameserver.eu.org', description: 'Game server platform.', url: 'https://kikigameserver.eu.org', method: 'GET', expectStatus: 200 },
     { id: 'kiki-02', name: 'kikiserverstatus.eu.org', description: 'Kiki server status page.', url: 'https://kikiserverstatus.eu.org', method: 'GET', expectStatus: 200 },
 
     // ========================
-    // DKV Projects
+    // DKV Network
     // ========================
 
     { id: 'dkv-01', name: 'dkvskanegu.eu.cc', description: 'DKV Skanegu website.', url: 'https://dkvskanegu.eu.cc', method: 'GET', expectStatus: 200 },
     { id: 'dkv-02', name: 'dkvproduction.eu.cc', description: 'DKV Production website.', url: 'https://dkvproduction.eu.cc', method: 'GET', expectStatus: 200 },
 
     // ========================
-    // Bot Network
+    // Kibotz Education Network
     // ========================
 
     { id: 'botnet-01', name: 'kibotz.edu.eu.org', description: 'Kibotz bot service.', url: 'https://kibotz.edu.eu.org', method: 'GET', expectStatus: 200 },
+
+
+    // ========================
+    // Supabase Endpoint Health Checker
+    // ========================
+
+    { id: 'pgsql-01', name: 'Photobooth App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://feeeqeyxoeqwgfhzvlgs.supabase.co/rest/v1/health?select=*&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZlZWVxZXl4b2Vxd2dmaHp2bGdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM1MDIzNDUsImV4cCI6MjA4OTA3ODM0NX0.JZspTeF3-QjButEs_Z6KlDcPyNxZpKndnyJaf1k6CFs', method: 'GET', expectStatus: 200 },
+
+    { id: 'pgsql-02', name: 'Vaultwarden App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://kmtbdwvaqetdmqflxahv.supabase.co/rest/v1/health?select=*&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttdGJkd3ZhcWV0ZG1xZmx4YWh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1MzkxNTcsImV4cCI6MjA3MTExNTE1N30.UyIHBj1UMeocqv7gISLeD_k_TLrHr4HsoIkmSU55Mpg', method: 'GET', expectStatus: 200 },
+
+    { id: 'pgsql-03', name: 'Umami App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://bgkrbrgwxwgpwrxwwync.supabase.co/rest/v1/health?select=*&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJna3Jicmd3eHdncHdyeHd3eW5jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ3NDQzMTQsImV4cCI6MjA3MDMyMDMxNH0.z06oG1-Dfz--qtSrQEN5L3CZOh25AdvTShcO_ljVKvM', method: 'GET', expectStatus: 200 },
+
+    // ========================
+    // Infinity Free Endpoint Checker
+    // ========================
+
+    { id: 'infr-01', name: 'host-1-kiki.infinityfree.me', description: 'Infinity Free Hosting Endpoint.', url: 'https://host-1-kiki.infinityfree.me', method: 'GET', expectStatus: 200 },
+    { id: 'infr-02', name: 'host-2-kiki.infinityfree.me', description: 'Infinity Free Hosting Endpoint.', url: 'https://host-2-kiki.infinityfree.me', method: 'GET', expectStatus: 200 },
+    { id: 'infr-03', name: 'host-3-kiki.infinityfree.me', description: 'Infinity Free Hosting Endpoint.', url: 'https://host-3-kiki.infinityfree.me', method: 'GET', expectStatus: 200 },
+
 
   ],
 }
