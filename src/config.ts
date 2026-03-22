@@ -33,7 +33,7 @@ export const config: Config = {
 
     { id: 'bot-01', name: 'n8n.hariyonorizki.eu.org', description: 'Workflow automation service.', url: 'https://n8n.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
     { id: 'bot-02', name: 'ntfy.hariyonorizki.eu.org', description: 'Notification service.', url: 'https://ntfy.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
-    { id: 'bot-03', name: 'waha.hariyonorizki.eu.org', description: 'WhatsApp HTTP API service.', url: 'https://waha.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
+    //{ id: 'bot-03', name: 'waha.hariyonorizki.eu.org', description: 'WhatsApp HTTP API service.', url: 'https://waha.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
     { id: 'bot-04', name: 'typebot.hariyonorizki.eu.org', description: 'Typebot chatbot service.', url: 'https://typebot.hariyonorizki.eu.org', method: 'GET', expectStatus: 307 },
 
     // ========================
@@ -42,19 +42,19 @@ export const config: Config = {
 
     { id: 'infra-01', name: 'cdn-hariyonorizki.eu.org', description: 'Primary CDN.', url: 'https://cdn-hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
     { id: 'infra-02', name: 'cdn-kikiserver.eu.org', description: 'CDN backup node.', url: 'https://cdn-kikiserver.eu.org', method: 'GET', expectStatus: 200 },
-    { id: 'infra-03', name: 'portainer.hariyonorizki.eu.org', description: 'Docker management panel.', url: 'https://portainer.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
+    //{ id: 'infra-03', name: 'portainer.hariyonorizki.eu.org', description: 'Docker management panel.', url: 'https://portainer.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
     { id: 'infra-04', name: 'vpn.hariyonorizki.eu.org', description: 'VPN gateway.', url: 'https://vpn.hariyonorizki.eu.org', method: 'GET', expectStatus: 302 },
     { id: 'infra-05', name: 'vnc.hariyonorizki.eu.org', description: 'VNC remote access.', url: 'https://vnc.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
-    { id: 'infra-06', name: 'rdp.hariyonorizki.eu.org', description: 'RDP remote access.', url: 'https://rdp.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
+    //{ id: 'infra-06', name: 'rdp.hariyonorizki.eu.org', description: 'RDP remote access.', url: 'https://rdp.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
 
     // ========================
     // Database Services
     // ========================
 
     { id: 'db-01', name: 'db.hariyonorizki.eu.org', description: 'phpMyAdmin interface.', url: 'https://db.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
-    { id: 'db-02', name: 'dbpgsql.hariyonorizki.eu.org', description: 'Supabase Studio.', url: 'https://dbpgsql.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
-    { id: 'db-03', name: 'mysql.hariyonorizki.eu.org', description: 'MySQL database service.', url: 'https://mysql.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
-    { id: 'db-04', name: 'pgsql.hariyonorizki.eu.org', description: 'PostgreSQL database service.', url: 'https://pgsql.hariyonorizki.eu.org', method: 'GET', expectStatus: 302 },
+    //{ id: 'db-02', name: 'dbpgsql.hariyonorizki.eu.org', description: 'Supabase Studio.', url: 'https://dbpgsql.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
+    //{ id: 'db-03', name: 'mysql.hariyonorizki.eu.org', description: 'MySQL database service.', url: 'https://mysql.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
+    //{ id: 'db-04', name: 'pgsql.hariyonorizki.eu.org', description: 'PostgreSQL database service.', url: 'https://pgsql.hariyonorizki.eu.org', method: 'GET', expectStatus: 302 },
     { id: 'db-05', name: 'redis.hariyonorizki.eu.org', description: 'Redis database service.', url: 'https://redis.hariyonorizki.eu.org', method: 'GET', expectStatus: 302 },
 
     // ========================
@@ -62,20 +62,20 @@ export const config: Config = {
     // ========================
 
     { id: 'self-01', name: 'pass.hariyonorizki.eu.org', description: 'Bitwarden password manager.', url: 'https://pass.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
-    { id: 'self-02', name: 'git.hariyonorizki.eu.org', description: 'Git repository service.', url: 'https://git.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
+   // { id: 'self-02', name: 'git.hariyonorizki.eu.org', description: 'Git repository service.', url: 'https://git.hariyonorizki.eu.org', method: 'GET', expectStatus: 200 },
 
     // ========================
     // Workspace Domains
     // ========================
 
-    { id: 'ws-01', name: 'kikidrive.my.id', description: 'Google Workspace primary domain.', url: 'https://kikidrive.my.id', method: 'GET', expectStatus: 200 },
-    { id: 'ws-02', name: 'kikidrive.xo.je', description: 'Google Workspace alias domain.', url: 'https://kikidrive.xo.je', method: 'GET', expectStatus: 200 },
-    { id: 'ws-03', name: 'kikidrive.rf.gd', description: 'Google Workspace alias domain.', url: 'https://kikidrive.rf.gd', method: 'GET', expectStatus: 200 },
-    { id: 'ws-04', name: 'kikidrive.fwh.is', description: 'Google Workspace alias domain.', url: 'https://kikidrive.fwh.is', method: 'GET', expectStatus: 200 },
-    { id: 'ws-05', name: 'kikicloud.eu.cc', description: 'Google Workspace cloud domain.', url: 'https://kikicloud.eu.cc', method: 'GET', expectStatus: 200 },
-    { id: 'ws-06', name: 'kikiworkspace.my.id', description: 'Kiki Workspace domain.', url: 'https://kikiworkspace.my.id', method: 'GET', expectStatus: 200 },
-    { id: 'ws-07', name: 'kibotzeducation.my.id', description: 'Kibotz Education workspace.', url: 'https://kibotzeducation.my.id', method: 'GET', expectStatus: 200 },
-    { id: 'ws-08', name: 'iteducationkibotz.my.id', description: 'IT Education Kibotz workspace.', url: 'https://iteducationkibotz.my.id', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-01', name: 'kikidrive.my.id', description: 'Google Workspace primary domain.', url: 'https://kikidrive.my.id', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-02', name: 'kikidrive.xo.je', description: 'Google Workspace alias domain.', url: 'https://kikidrive.xo.je', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-03', name: 'kikidrive.rf.gd', description: 'Google Workspace alias domain.', url: 'https://kikidrive.rf.gd', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-04', name: 'kikidrive.fwh.is', description: 'Google Workspace alias domain.', url: 'https://kikidrive.fwh.is', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-05', name: 'kikicloud.eu.cc', description: 'Google Workspace cloud domain.', url: 'https://kikicloud.eu.cc', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-06', name: 'kikiworkspace.my.id', description: 'Kiki Workspace domain.', url: 'https://kikiworkspace.my.id', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-07', name: 'kibotzeducation.my.id', description: 'Kibotz Education workspace.', url: 'https://kibotzeducation.my.id', method: 'GET', expectStatus: 200 },
+    //{ id: 'ws-08', name: 'iteducationkibotz.my.id', description: 'IT Education Kibotz workspace.', url: 'https://iteducationkibotz.my.id', method: 'GET', expectStatus: 200 },
 
     // ========================
     // Gendhis Photo Studio Network
