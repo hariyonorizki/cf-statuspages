@@ -110,11 +110,11 @@ export const config: Config = {
     // Supabase Endpoint Health Checker
     // ========================
 
-    { id: 'pgsql-01', name: 'Photobooth App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://feeeqeyxoeqwgfhzvlgs.supabase.co/rest/v1/health?select=*&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZlZWVxZXl4b2Vxd2dmaHp2bGdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM1MDIzNDUsImV4cCI6MjA4OTA3ODM0NX0.JZspTeF3-QjButEs_Z6KlDcPyNxZpKndnyJaf1k6CFs', method: 'GET', expectStatus: 200 },
+    { id: 'pgsql-01', name: 'Photobooth App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://feeeqeyxoeqwgfhzvlgs.supabase.co/rest/v1/health?select=text&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZlZWVxZXl4b2Vxd2dmaHp2bGdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM1MDIzNDUsImV4cCI6MjA4OTA3ODM0NX0.JZspTeF3-QjButEs_Z6KlDcPyNxZpKndnyJaf1k6CFs', method: 'GET', expectStatus: 200 },
 
-    { id: 'pgsql-02', name: 'Vaultwarden App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://kmtbdwvaqetdmqflxahv.supabase.co/rest/v1/health?select=*&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttdGJkd3ZhcWV0ZG1xZmx4YWh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1MzkxNTcsImV4cCI6MjA3MTExNTE1N30.UyIHBj1UMeocqv7gISLeD_k_TLrHr4HsoIkmSU55Mpg', method: 'GET', expectStatus: 200 },
+    { id: 'pgsql-02', name: 'Vaultwarden App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://kmtbdwvaqetdmqflxahv.supabase.co/rest/v1/health?select=text&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttdGJkd3ZhcWV0ZG1xZmx4YWh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU1MzkxNTcsImV4cCI6MjA3MTExNTE1N30.UyIHBj1UMeocqv7gISLeD_k_TLrHr4HsoIkmSU55Mpg', method: 'GET', expectStatus: 200 },
 
-    { id: 'pgsql-03', name: 'Umami App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://bgkrbrgwxwgpwrxwwync.supabase.co/rest/v1/health?select=*&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJna3Jicmd3eHdncHdyeHd3eW5jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ3NDQzMTQsImV4cCI6MjA3MDMyMDMxNH0.z06oG1-Dfz--qtSrQEN5L3CZOh25AdvTShcO_ljVKvM', method: 'GET', expectStatus: 200 },
+    { id: 'pgsql-03', name: 'Umami App Database', description: 'Supabase Endpoint Health Checker.', url: 'https://bgkrbrgwxwgpwrxwwync.supabase.co/rest/v1/health?select=text&limit=1&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJna3Jicmd3eHdncHdyeHd3eW5jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ3NDQzMTQsImV4cCI6MjA3MDMyMDMxNH0.z06oG1-Dfz--qtSrQEN5L3CZOh25AdvTShcO_ljVKvM', method: 'GET', expectStatus: 200 },
 
     // ========================
     // Infinity Free Endpoint Checker
